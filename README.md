@@ -34,6 +34,47 @@ Edit `Config.json` and set `ytdlDelay` to something like `10` seconds.
 
 Run notepad as Admin then browse to `C:\Windows\System32\drivers\etc\hosts` add this new line `127.0.0.1 localhost.youtube.com` to the bottom of the file, edit `Config.json` and set `ytdlWebServerURL` to `http://localhost.youtube.com:9696`
 
+### Running on Windows Server 2022
+1. Launch **Server Manager** from Start
+2. Click **Manage** > **Add Roles and Features**
+3. Click **Next** until you reach the **Features** section
+4. Check **Media Foundation** and **.NET Framework 3.5 Features**
+5. Click **Next** and then **Install**
+6. Wait until it says **Installation succeeded**
+7. Close **Server Manager**
+8. Launch **Windows PowerShell** from Start and run the following command:
+
+```
+Invoke-WebRequest https://raw.githubusercontent.com/asheroto/winget-installer/master/winget-install.ps1 -UseBasicParsing | iex
+```
+
+*This will install **winget**, which is required to obtain and verify the required codec(s).*
+
+9. Go to https://store.rg-adguard.net
+10. Copy and paste the Microsoft Store link for VP9 found below:
+
+VP9: https://apps.microsoft.com/detail/9n4d0msmp0pt  
+AV1: https://apps.microsoft.com/detail/9mvzqvxjbq9v  
+AC-3: https://apps.microsoft.com/detail/9nvjqjbdkn97  
+
+11. Click the checkmark
+12. Download the file that ends with **.AppxBundle**
+13. **Repeat steps 10–12 for AV1 and AC-3**
+14. Return to **Windows PowerShell** (or reopen it if you closed it)
+15. Navigate to the folder where you downloaded the **.AppxBundle** files
+
+*It is important that you have enabled **File name extensions** in Windows Explorer.*
+
+16. Update the following lines to match the **.AppxBundle version** you downloaded, then run the command:
+
+```
+Add-AppxPackage -Path "%appdata%\..\..\Downloads\Microsoft.VP9VideoExtensions_1.2.12.0_neutral_~_8wekyb3d8bbwe.AppxBundle"
+Add-AppxPackage -Path "%appdata%\..\..\Downloads\Microsoft.AV1VideoExtension_2.0.6.0_neutral_~_8wekyb3d8bbwe.AppxBundle"
+Add-AppxPackage -Path "%appdata%\..\..\Downloads\DolbyLaboratories.DolbyDigitalPlusDecoderOEM_1.2.581.0_neutral_~_rz1tebttyb220.AppxBundle"
+```
+
+17. Everything is set! You can use the browser extension above to fix the bot problem.
+
 ### Running on Linux
 
 - Install `dotnet-runtime-10.0`

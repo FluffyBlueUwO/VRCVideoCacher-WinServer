@@ -8,7 +8,7 @@ VRCVideoCacher is a tool used to cache VRChat videos to your local disk and/or f
 
 It replaces VRChats yt-dlp.exe with our own stub yt-dlp, this gets replaced on application startup and is restored on exit.
 
-Auto install missing codecs: [VP9](https://apps.microsoft.com/detail/9n4d0msmp0pt) | [AV1](https://apps.microsoft.com/detail/9mvzqvxjbq9v) | [AC-3](https://apps.microsoft.com/detail/9nvjqjbdkn97) | [HEVC](https://apps.microsoft.com/detail/9NMZLZ57R3T7)
+Auto install missing codecs: [VP9](https://apps.microsoft.com/detail/9n4d0msmp0pt) | [AV1](https://apps.microsoft.com/detail/9mvzqvxjbq9v) | [AC-3](https://apps.microsoft.com/detail/9nvjqjbdkn97) | [HEVC](https://apps.microsoft.com/detail/9NMZLZ57R3T7) (PAID)
 
 ### Are there any risks involved?
 

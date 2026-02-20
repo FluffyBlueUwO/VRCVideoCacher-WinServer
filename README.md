@@ -8,7 +8,7 @@ VRCVideoCacher is a tool used to cache VRChat videos to your local disk and/or f
 
 It replaces VRChats yt-dlp.exe with our own stub yt-dlp, this gets replaced on application startup and is restored on exit.
 
-Auto install missing codecs: [VP9](https://apps.microsoft.com/detail/9n4d0msmp0pt) | [AV1](https://apps.microsoft.com/detail/9mvzqvxjbq9v) | [AC-3](https://apps.microsoft.com/detail/9nvjqjbdkn97) | [HEVC](https://apps.microsoft.com/detail/9NMZLZ57R3T7) (PAID)
+Auto install missing codecs: [VP9](https://apps.microsoft.com/detail/9n4d0msmp0pt) | [AV1](https://apps.microsoft.com/detail/9mvzqvxjbq9v) | [AC-3](https://apps.microsoft.com/detail/9nvjqjbdkn97) | [HEVC](https://apps.microsoft.com/detail/9NMZLZ57R3T7) (Paid)
 
 ### Are there any risks involved?
 
@@ -66,10 +66,10 @@ HEVC: https://apps.microsoft.com/detail/9nmzlz57r3t7
 
 *It is important that you have enabled **File name extensions** in Windows Explorer.*
 
-16. Rename the **.AppxBundle** you downloaded to something easy to write in, then replace this line below and run the command.
+16. Rename the **AppxBundle** you downloaded to something easy to write then replace this line below and run the command for each one.
 
 ```
-Add-AppxPackage -Path "FULL_PATH_TO_APPXBUNDLE.AppxBundle"
+Add-AppxPackage -Path ".\CHANGEME.AppxBundle"
 ```
 
 17. Everything is set! You can use the browser extension above to fix the bot problem.

@@ -56,6 +56,7 @@ Invoke-WebRequest https://raw.githubusercontent.com/asheroto/winget-installer/ma
 VP9: https://apps.microsoft.com/detail/9n4d0msmp0pt  
 AV1: https://apps.microsoft.com/detail/9mvzqvxjbq9v  
 AC-3: https://apps.microsoft.com/detail/9nvjqjbdkn97  
+HEVC: https://apps.microsoft.com/detail/9nmzlz57r3t7  
 
 11. Click the checkmark
 12. Download the file that ends with **.AppxBundle**
@@ -65,12 +66,10 @@ AC-3: https://apps.microsoft.com/detail/9nvjqjbdkn97
 
 *It is important that you have enabled **File name extensions** in Windows Explorer.*
 
-16. Update the following lines to match the **.AppxBundle version** you downloaded, then run the command:
+16. Rename the **.AppxBundle** you downloaded to something easy to write in, then replace this line below and run the command.
 
 ```
-Add-AppxPackage -Path "%appdata%\..\..\Downloads\Microsoft.VP9VideoExtensions_1.2.12.0_neutral_~_8wekyb3d8bbwe.AppxBundle"
-Add-AppxPackage -Path "%appdata%\..\..\Downloads\Microsoft.AV1VideoExtension_2.0.6.0_neutral_~_8wekyb3d8bbwe.AppxBundle"
-Add-AppxPackage -Path "%appdata%\..\..\Downloads\DolbyLaboratories.DolbyDigitalPlusDecoderOEM_1.2.581.0_neutral_~_rz1tebttyb220.AppxBundle"
+Add-AppxPackage -Path "FULL_PATH_TO_APPXBUNDLE.AppxBundle"
 ```
 
 17. Everything is set! You can use the browser extension above to fix the bot problem.

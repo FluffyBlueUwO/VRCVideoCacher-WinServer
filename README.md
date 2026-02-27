@@ -58,21 +58,20 @@ AV1: https://apps.microsoft.com/detail/9mvzqvxjbq9v
 AC-3: https://apps.microsoft.com/detail/9nvjqjbdkn97  
 HEVC: https://apps.microsoft.com/detail/9nmzlz57r3t7  
 
-11. Click the checkmark
-12. Download the file that ends with **.AppxBundle**
-13. **Repeat steps 10–12 for AV1 and AC-3**
-14. Return to **Windows PowerShell** (or reopen it if you closed it)
-15. Navigate to the folder where you downloaded the **.AppxBundle** files
+11. Download the file that ends with **.AppxBundle**
+12. **Repeat steps 10–12 for AV1 and AC-3**
+13. Return to **Windows PowerShell** (or reopen it if you closed it)
+14. Navigate to the folder where you downloaded the **.AppxBundle** files
 
 *It is important that you have enabled **File name extensions** in Windows Explorer.*
 
-16. Rename the **AppxBundle** you downloaded to something easy to write then replace this line below and run the command for each one.
+15. Rename the **AppxBundle** you downloaded to something easy to write then replace this line below and run the command for each one.
 
 ```
 Add-AppxPackage -Path ".\CHANGEME.AppxBundle"
 ```
 
-17. Everything is set! You can use the browser extension above to fix the bot problem.
+16. Everything is set! You can use the browser extension above to fix the bot problem.
 
 ### Running on Linux
 

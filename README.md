@@ -50,7 +50,7 @@ Invoke-WebRequest https://raw.githubusercontent.com/asheroto/winget-installer/ma
 
 *This will install **winget**, which is required to obtain and verify the required codec(s).*
 
-9. Go to https://store.rg-adguard.net
+9. You'll have to find a way to get each extension's AppxBundle.
 10. Copy and paste the Microsoft Store link for VP9 found below:
 
 VP9: https://apps.microsoft.com/detail/9n4d0msmp0pt  
